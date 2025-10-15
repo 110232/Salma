@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Rosa Pastel</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fff5fa);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+
+    /* Pantalla inicial */
+    #pantalla-inicial {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom right, #ffc1d9, #fff0f5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 200;
+      animation: fadeOut 1s ease 6s forwards;
+    }
+
+    #pantalla-inicial h1 {
+      color: #ff4d79;
+      font-size: 2em;
+      text-shadow: 1px 1px 3px #ff91a4;
+      animation: parpadeo 1.5s infinite;
+      font-weight: 600;
+    }
+
+    @keyframes parpadeo {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+
+    header {
+      background-color: #ffb6c1;
+      color: white;
+      padding: 20px 0;
+      font-size: 2em;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-shadow: 1px 1px 3px #ff91a4;
+    }
+
+    section {
+      display: none;
+      padding: 40px 20px;
+      min-height: calc(100vh - 150px);
+      box-sizing: border-box;
+      overflow-y: auto;
+      max-height: calc(100vh - 150px);
+      scrollbar-width: thin;
+      scrollbar-color: #ffb6c1 #ffe6f0;
+    }
+
+    section::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    section::-webkit-scrollbar-thumb {
+      background-color: #ffb6c1;
+      border-radius: 10px;
+    }
+
+    section.active {
+      display: block;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffd6e0;
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 0;
+      border-top: 2px solid #ffb6c1;
+      z-index: 100;
+    }
+
+    nav button {
+      background-color: #ffb6c1;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 1.1em;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #ff8fab;
+      transform: scale(1.1);
+    }
+
+    nav button.active {
+      background-color: #ff4d79;
+      box-shadow: 0 0 10px #ff91a4;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+  </style>
+</head>
+<body>
+  <!-- Pantalla inicial -->
+  <div id="pantalla-inicial">
+    <h1>💖 Voltea el celular 💖</h1>
+  </div>
+
+  <header>🌸 Feliz Cumpleaños 🌸</header>
+
+  <section id="intro" class="active">
+    <p>Para empezar feliz cumpleaños espero que te la pases super bien y necesitas cumplir muchos muchos más y espero verte muy pronto para darte tu regalo, te quiero mucho Salma no sabes cuánto es más yo creo que la palabra quererte queda corta te amo mucho, igual el amar queda corto pero es la palabra que medio se acerca para decirte el aprecio que te tengo </p>
+  </section>
+
+  <section id="caracteristicas">
+    <p>Ay Salma muchísimas cosas por decirte para empezar muchas gracias por dejarme estar en tu vida gracias por ser mi amiga y porfavor nunca me dejes de hablar porque me gusta estar contigo me gusta platicar contigo cuando “jugamos” y cuándo salimos igual es muy padre haces las cosas super divertidas, siempre se parte de mi vida y igual dejarme ser parte de la tuya</p>
+  </section>
+
+  <section id="ejemplos">
+    <p>Cuando terminamos me di cuenta que eres una persona única que la verdad estuve a nada de que salieras de mi vida y ahorita me doy cuenta que independientemente de lo que seamos, amigos, novios hasta ex te quiero en mi vida porque eres muy chida Salma y porfavor que nadie te cambie, vas a tener mucho tiempo para conocer y encontrar a la persona que te quiera como eres, moldearte a como esa persona quiere no es amor</p>
+    <p>Eres una persona increíble, llena de energía, risa y corazón. Espero que nunca pierdas esa esencia tan bonita que tienes, porque es lo que te hace única </p>
+  </section>
+
+  <section id="contacto">
+    <p>De nuevo déjame compartir nuestras vidas eres la mejor persona que me pudo tocar en esta vida, y hazme el favor más grande de este planeta, nunca me dejes de hablar y ni dejes de salir conmigo, nunca hay que dejar de compartir momentos juntos, como siempre lo hemos hecho </p>
+    <p>Escribí esto con mucho cariño, especialmente para ti 💗</p>
+    <p>Espero que te haya gustado y que te la pases super bien. Con mucho cariño,  
+    <strong>Gael </strong>  
+    <br>15/10/25</p>
+  </section>
+
+  <nav>
+    <button class="active" onclick="mostrarSeccion('intro', this)">1</button>
+    <button onclick="mostrarSeccion('caracteristicas', this)">2</button>
+    <button onclick="mostrarSeccion('ejemplos', this)">3</button>
+    <button onclick="mostrarSeccion('contacto', this)">4</button>
+  </nav>
+
+  <script>
+    function mostrarSeccion(id, boton) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+      boton.classList.add('active');
+    }
+
+    setTimeout(() => {
+      document.getElementById('pantalla-inicial').style.display = 'none';
+    }, 7000);
+  </script>
+</body>
+</html>
